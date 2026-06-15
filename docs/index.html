@@ -77,14 +77,39 @@
 </head>
 <body>
 
-    <div class="demo-header text-center">
-        <div class="container">
-            <h1 class="display-6 fw-bold">Synthesizing the Lombard Effect Multi-Level Control of Speech Clarity and Vocal Effort in TTS</h1>
-            
-            <span class="badge bg-dark">Anonymous Interspeech submission #1159</span>
+    <<div class="container text-center my-5">
+    <!-- Paper Title -->
+    <h1 class="fw-bold mb-4">Synthesizing the Lombard Effect: Multi-Level Control of Speech Clarity and Vocal Effort in TTS</h1>
+    
+    <!-- Authors -->
+    <div class="row justify-content-center fs-5 mb-3">
+        <div class="col-auto">
+            <strong>Seymanur Akti</strong><sup>1,3</sup>
+        </div>
+        <div class="col-auto">
+            <strong>Alexander Waibel</strong><sup>1,2</sup>
         </div>
     </div>
 
+    <!-- Affiliations -->
+    <div class="text-muted mb-4">
+        <p class="mb-1"><sup>1</sup> Karlsruhe Institute of Technology (KIT), Germany</p>
+        <p class="mb-1"><sup>2</sup> Carnegie Mellon University (CMU), USA</p>
+        <p class="mb-1"><sup>3</sup> KIT Campus Transfer (KCT), Germany</p>
+    </div>
+    <!-- Interspeech Badge -->
+    <span class="badge bg-success fs-6 px-3 py-2">Interspeech 2026</span>
+</div>
+<div class="row justify-content-center my-5">
+    <div class="col-lg-10">
+        <div class="card border-0 bg-light p-4 shadow-sm rounded-3">
+            <h3 class="fw-bold mb-3 text-center text-dark">Abstract</h3>
+            <p class="fs-5 text-secondary lh-base mx-md-4 text-justify" style="text-align: justify;">
+                Humans tend to speak louder and clearer in challenging environments, such as noisy conditions or when addressing hearing-impaired listeners, which is called Lombard effect. To simulate this behavior in speech synthesis systems, we introduce a flow-matching based text-to-speech (TTS) model trained with vocal effort and articulation pseudo-labels. The proposed model achieves continuous and disentangled control of vocal effort and articulation, while also enabling word-level emphasis for clarifying specific segments of an utterance. Experimental results show that these control mechanisms effectively improve clarity-related acoustic features. Furthermore, speech-in-noise experiments demonstrate that our model successfully simulates the intelligibility gains of human clear speech in noisy conditions.
+            </p>
+        </div>
+    </div>
+</div>
     <div class="container mb-5">
 
         <h2 class="section-title">1. Vocal Effort and Articulation Scaling (Utterance Level)</h2>
@@ -184,7 +209,7 @@
             </table>
         </div>
 
-        <h2 class="section-title">2. Intelligibility in Noise (Mixed at Fixed SNR)</h2>
+        <h2 class="section-title">2. Intelligibility in Noise (Fixed SNR)</h2>
         
         <div class="noise-section mb-5">
             <h3 class="h5 fw-bold mb-4 text-primary">Noise Type: Restaurant Babble (SNR=5)</h3>
